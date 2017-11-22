@@ -1,0 +1,94 @@
+05/08/2015
+
+Lab 2   RAMDISK: In-Memory Block Device
+
+** File stored in /dev/
+   - Open (device_file)
+
+
+        insmod (install module)
+Kernel <---------------------blkdev.h
+^
+|
+|
+|
+|
+|
+module
+
+-----------------------------------------------------------------------------
+
+http://lxr.linux.no/#linux+v2.6.18/
+
+1) SUPPORT READ/WRITE FROM/TO RAMDISK
+/** blkdev.h **/
+
+struct request {
+    .
+    .
+    .
+}
+
+1. construct dependency graph among processes waiting on a RAMDISK
+2. If there exists a cycle, then tehre's a deadlock
+
+unsigned int requestType = rq_data_dir(req);
+// compute offset to the buffer
+
+                        //Offset
+uint8_t *ptr = d->data+(req->sector)*SECTOR_SIZE;
+
+if (requestType==READ) {
+            //dest     //src        //how many sec
+    memcpy(req->buffer, ptr, req->current_num_sectors*SECTOR_SIZE)
+    .
+    .
+}
+else if (requestType==WRITE) {
+    .
+    .
+    .
+}
+
+memcpy, kmalloc
+
+------------------------------------------------------------------------------
+
+2) IMPLEMENT LOCKING
+
+**Operations
+1. OSPRDIOACQUIRE       // Blocking implementation
+2. OSPRDIORELEASE       // Release lock
+3. OSPRDIOCTRYACQUIRE   // Polling
+
+Handle different for each operation:
+Read lock
+Write lock
+
+WRITE LOCK:
+    1. P1 P2 P3 want to acquire lock
+    2. When P1 acquires lock, put P2, P3 into queue
+    3. Serve the lock in order (FirstComeFirstServe)
+       a. Assign ticket # to each process, only give lock if ticket # matches
+
+// global variables
+ticket_head = 0;
+ticket_tail = 0;
+
+my_ticket = ticket_head;
+ticket_head+1;
+
+int wait_event_interruptable (wait_queue_head_t q, condition)  // blocks current task on event_queue until "condition becomes true"
+    // condition -> my_ticket == ticket_tail
+
+    // If false -> put in queue, until "wake_all()" process called
+        // increment ticket_tail by one because it assumes that P1 is still alive
+        // if P1 is not already alive, we have a deadlock
+            // implement "exited_ticket" list for P0 to check when incrementing ticket_num
+                // if (wait.event_interruptable returns -ERESTART )
+            // osprd_clost_list() add ticket number to exited_ticket list before exiting
+
+
+                            filp->f_flags=F_OSPRD_LOCKED
+                                   VVVVV
+addToList(&(d->writeLockPids), current->pid)

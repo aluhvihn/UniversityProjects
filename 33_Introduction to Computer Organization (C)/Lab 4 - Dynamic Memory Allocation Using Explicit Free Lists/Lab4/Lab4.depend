@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1418221192 source:/home/alvin/Dropbox/School/Fall 2014/COM SCI 33/Lab/Lab 4/Lab4/lab4.c
+	<stdio.h>
+	<stdlib.h>
+

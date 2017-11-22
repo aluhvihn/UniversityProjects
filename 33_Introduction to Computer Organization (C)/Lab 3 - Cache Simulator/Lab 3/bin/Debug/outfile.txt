@@ -1,0 +1,44 @@
+S= 16 E= 4 B= 32 T= 7 M= 65536 s= 4 b= 5 m= 16
+loc copy y=16374 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16375 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16376 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16377 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16378 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16379 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16380 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16381 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16382 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16383 ni=   20 nj=   20 rh=   19 rm=    1 wh=   18 wm=     2 dw=   20
+loc copy y=16384 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16385 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16386 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16387 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16388 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16389 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16390 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16391 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16392 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16393 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc copy y=16394 ni=   20 nj=   20 rh=   19 rm=    1 wh=   19 wm=     1 dw=   20
+loc rows y=16374 ni=   20 nj=   20 rh=  386 rm=   14 wh=  387 wm=    13 dw=  400
+loc cols y=16374 ni=   20 nj=   20 rh=  386 rm=   14 wh=  387 wm=    13 dw=  400
+ ws rows y=20000 ni=   88 nj=   88 rh= 1120 rm= 6624 wh= 7502 wm=   242 dw= 7744
+ ws rows y=20000 ni=   96 nj=   96 rh=  910 rm= 8306 wh= 8928 wm=   288 dw= 9216
+ ws rows y=20000 ni=  104 nj=  104 rh=  938 rm= 9878 wh=10478 wm=   338 dw=10816
+ ws rows y=20000 ni=  112 nj=  112 rh=  614 rm=11930 wh=12152 wm=   392 dw=12544
+ ws rows y=20000 ni=  120 nj=  120 rh=  499 rm=13901 wh=13950 wm=   450 dw=14400
+ wsbrows y=20000 ni=   88 nj=   88 rh= 6807 rm=  937 wh= 7315 wm=   429 dw= 7744
+ wsbrows y=20000 ni=   96 nj=   96 rh= 8153 rm= 1063 wh= 8928 wm=   288 dw= 9216
+ wsbrows y=20000 ni=  104 nj=  104 rh= 9463 rm= 1353 wh=10135 wm=   681 dw=10816
+ wsbrows y=20000 ni=  112 nj=  112 rh=11072 rm= 1472 wh=11952 wm=   592 dw=12544
+ wsbrows y=20000 ni=  120 nj=  120 rh=12668 rm= 1732 wh=13822 wm=   578 dw=14400
+ ws cols y=20000 ni=   88 nj=   88 rh= 7502 rm=  242 wh= 1047 wm=  6697 dw= 7744
+ ws cols y=20000 ni=   96 nj=   96 rh= 8928 rm=  288 wh=  966 wm=  8250 dw= 9216
+ ws cols y=20000 ni=  104 nj=  104 rh=10478 rm=  338 wh=  923 wm=  9893 dw=10816
+ ws cols y=20000 ni=  112 nj=  112 rh=12152 rm=  392 wh=  660 wm= 11884 dw=12544
+ ws cols y=20000 ni=  120 nj=  120 rh=13950 rm=  450 wh=  527 wm= 13873 dw=14400
+ wsbcols y=20000 ni=   88 nj=   88 rh= 7309 rm=  435 wh= 6848 wm=   896 dw= 7744
+ wsbcols y=20000 ni=   96 nj=   96 rh= 8928 rm=  288 wh= 8146 wm=  1070 dw= 9216
+ wsbcols y=20000 ni=  104 nj=  104 rh=10143 rm=  673 wh= 9505 wm=  1311 dw=10816
+ wsbcols y=20000 ni=  112 nj=  112 rh=11948 rm=  596 wh=11079 wm=  1465 dw=12544
+ wsbcols y=20000 ni=  120 nj=  120 rh=13827 rm=  573 wh=12665 wm=  1735 dw=14400

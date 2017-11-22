@@ -1,0 +1,24 @@
+Alvin Lim
+
+804 011 675
+
+################################################################################
+
+                             CS 111 Lab 1 README
+
+################################################################################
+
+================================ || PART 1A || ================================
+
+  In the "read-command.c" source file, I included a header file "my_stack.h",
+which contains my declaration variables and functions for a stack using a
+linked list and the definitions included in "read-command.c". I used the stack
+struct for 2 different stacks to make the command stream: an operator stack
+and a command stack. I used the link that someone posted on Piazza,
+<https://www.cs.bu.edu/teaching/c/stack/linked-list/> for a refresher on how
+to implement a linked list.
+
+  For the "make_command_stream" function, I read the following source:
+<http://www.newty.de/fpt/fpt.html> to get a better understanding of function
+pointers, since I have only seen examples of them before, but never worked with
+them myself.

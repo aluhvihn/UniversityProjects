@@ -1,0 +1,150 @@
+LAB 3: File System
+
+                                                    Block 0
+|===================================================|
+|                                                   |
+|       Boot sector, Partition Block Table          |
+|                                                   |
+|---------------------------------------------------|
+|                                                   |
+|               Superblock                          |   1
+|                                                   |
+|---------------------------------------------------|
+|                                                   |
+|              Free block bitmap                    |   Enough blocks for N bits
+|                                                   |
+|---------------------------------------------------|
+|                                                   |
+|              Inodes                               |   Enough blocks for M inodes
+|                                                   |
+|---------------------------------------------------|
+|                                                   |
+|              File and directory data blocks       |
+|                                                   |
+|===================================================|
+                                                    Block N-1
+
+block size = 1024 bytes
+1 bit per block -> indicates if block is available
+
+
+
+N bits
+
+# bitmap blocks: N/(8*1024)
+
+
+Each file/directory associated with an inode
+
+typedef struct ospfs_inode {
+    uint32_t    oi_size;
+    uint32_t    oi_ftype;
+    uint32_t    oi_nlink;
+    uint32_t    oi_mode;
+    						// 10
+    uint32_t    oi_direct[OSPFS_NDIRECT];		// Used to store 
+    uint32_t    oi_indirect;					// data blocks/content/prefs
+    uint32_t    oi_indirect2;					// of regular file/dir
+} ospfs_inode_t;
+
+typdef struct ospfs_directory {
+	uint32_t	od_ino;
+	char		od_name[MAX_NAME_LEN+1];
+
+	// Other directories inside
+} ospfs_directory_t;
+
+
+1) Use a "directory entry" to represent "CS111"
+	- Stored in data block of root directory
+		- When creating another dir/file inside a root directory, increment
+		"oi_nlink"
+2) Create an inode structure for CS111 (each file/directory)
+
+
+###############################################################################
+
+static int
+ospfs_create(struct inode *dir, struct dentry *dentry, int mode, struct nameidata *nd)
+{
+	ospfs_inode_t *dir_oi = ospfs_inode(dir->i_ino);
+	uint32_t entry_ino = 0;
+	ospfs_inode_t *file_oi = NULL;			// Step 1
+	ospfs_directory_t *new_entry = NULL;	// Step 2
+	uint32_t	block_ino = 0;
+
+	/* error checking */
+
+	entry_ino = find_free_inode();
+
+	if (entry_ino == 0) {
+		return -ENOSPC;
+	}
+
+	file_oi = ospfs_inode(entry_ino);
+
+	if (file_oi == NULL) {
+		return -EIO;
+	}
+
+	file_oi->oi_size = 0;
+	file_oi->oi_ftype = OSPFS_FTYPE_REG;
+	file_oi->oi_nlink = 1;
+	file_oi->oi_mode = mode;
+
+	num_entry = create_blank_drentry(dr_oi);
+	if (IS_ERR(new_entry)) {
+		return PTR_ERR(new_entry);
+	}
+
+	new_entry->od_ino = entry_ino;
+
+	memcpy(new_entry->od_name, dentry->d_name_name);
+	
+	new_entry->od_name[dentry->d_name_len] = '\0';
+
+	// Skeleton Code
+	// struct inode *i = ospfs_mk_linux_inode(dir->i_sb, entry_ino);
+	// 	if (!i)
+	// 		return -ENOMEM;
+	// 	d_instantiate(dentry, i);
+	// 	return 0;
+}
+
+###############################################################################
+
+static ospfs_direntry_t *
+create_blank_direntry(ospfs_inode_t *dir_oi)
+{
+	// Outline:
+	// 1. Check the existing directory data for an empty entry.  Return one
+	//    if you find it.
+	// 2. If there's no empty entries, add a block to the directory.
+	//    Use ERR_PTR if this fails; otherwise, clear out all the directory
+	//    entries and return one of them.
+
+	uint32_t	new_size;
+	ospfs_direntry_t *od;
+	int retval = 0;
+	int offset;
+														// 128
+	for (offset = 0; offset < dir_oi->oi_size; offset+=OSPFS_DIRENTRY_SIZE) {
+		od = ospfs_inode_data(dir_oi, offset);
+
+		if (od->od_ino == 0) {	// Found a blank directory
+			return od;
+		}
+	}
+
+	new_size = (ospfs_size2inblocks(dir_oi->oi_size)+1)*OSPFS_BLKSIZE;
+				// current # blocks corresponding to oi_size
+				
+	retval = change_size(dir_oi, new_size);
+	
+	if (retval != 0) {
+		return ERR_PTR(retval);
+	}
+
+	dir_oi->oi_size = new_size;
+	return ospfs_inode_data(dir_oi, offset);
+}
