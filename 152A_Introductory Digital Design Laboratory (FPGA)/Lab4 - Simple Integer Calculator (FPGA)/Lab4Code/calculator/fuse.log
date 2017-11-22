@@ -1,0 +1,39 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/CS_152A/Lab4/Lab4Code/calculator/tb_isim_beh.exe -prj E:/CS_152A/Lab4/Lab4Code/calculator/tb_beh.prj work.tb work.glbl 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/register_t.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/clock_666hz.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/clock_1_5hz.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/registers.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/make_clocks.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/ff_input.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/display_convert.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/calculate.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/blink_display.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/calculator.v" into library work
+Analyzing Verilog file "E:/CS_152A/Lab4/Lab4Code/calculator/src/tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/CS_152A/Lab4/Lab4Code/calculator/src/tb.v" Line 19: Port led is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/CS_152A/Lab4/Lab4Code/calculator/src/calculator.v" Line 243: Port currentRegister is not connected to this instance
+Completed static elaboration
+Compiling module ff_input
+Compiling module clock_1_5hz
+Compiling module clock_666hz
+Compiling module make_clocks
+Compiling module register_t
+Compiling module registers
+Compiling module calculate
+Compiling module display_convert
+Compiling module blink_display
+Compiling module calculator
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable E:/CS_152A/Lab4/Lab4Code/calculator/tb_isim_beh.exe
+Fuse Memory Usage: 27360 KB
+Fuse CPU Usage: 608 ms

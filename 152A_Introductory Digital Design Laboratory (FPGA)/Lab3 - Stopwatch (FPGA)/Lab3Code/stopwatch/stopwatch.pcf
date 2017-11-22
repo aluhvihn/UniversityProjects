@@ -1,0 +1,76 @@
+//! **************************************************************************
+// Written by: Map P.68d on Mon May 11 14:41:28 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clocks/c1/clk_1_TEMP" BEL
+        "clocks/c15/clk_blink_TEMP" BEL "clocks/c2/clk_2_TEMP" BEL
+        "clocks/c666/clk_666_TEMP" BEL "clocks/c1/clk_counter_0" BEL
+        "clocks/c1/clk_counter_1" BEL "clocks/c1/clk_counter_2" BEL
+        "clocks/c1/clk_counter_3" BEL "clocks/c1/clk_counter_4" BEL
+        "clocks/c1/clk_counter_5" BEL "clocks/c1/clk_counter_6" BEL
+        "clocks/c1/clk_counter_7" BEL "clocks/c1/clk_counter_8" BEL
+        "clocks/c1/clk_counter_9" BEL "clocks/c1/clk_counter_10" BEL
+        "clocks/c1/clk_counter_11" BEL "clocks/c1/clk_counter_12" BEL
+        "clocks/c1/clk_counter_13" BEL "clocks/c1/clk_counter_14" BEL
+        "clocks/c1/clk_counter_15" BEL "clocks/c1/clk_counter_16" BEL
+        "clocks/c1/clk_counter_17" BEL "clocks/c1/clk_counter_18" BEL
+        "clocks/c1/clk_counter_19" BEL "clocks/c1/clk_counter_20" BEL
+        "clocks/c1/clk_counter_21" BEL "clocks/c1/clk_counter_22" BEL
+        "clocks/c1/clk_counter_23" BEL "clocks/c1/clk_counter_24" BEL
+        "clocks/c1/clk_counter_25" BEL "clocks/c15/clk_counter_0" BEL
+        "clocks/c15/clk_counter_1" BEL "clocks/c15/clk_counter_2" BEL
+        "clocks/c15/clk_counter_3" BEL "clocks/c15/clk_counter_4" BEL
+        "clocks/c15/clk_counter_5" BEL "clocks/c15/clk_counter_6" BEL
+        "clocks/c15/clk_counter_7" BEL "clocks/c15/clk_counter_8" BEL
+        "clocks/c15/clk_counter_9" BEL "clocks/c15/clk_counter_10" BEL
+        "clocks/c15/clk_counter_11" BEL "clocks/c15/clk_counter_12" BEL
+        "clocks/c15/clk_counter_13" BEL "clocks/c15/clk_counter_14" BEL
+        "clocks/c15/clk_counter_15" BEL "clocks/c15/clk_counter_16" BEL
+        "clocks/c15/clk_counter_17" BEL "clocks/c15/clk_counter_18" BEL
+        "clocks/c15/clk_counter_19" BEL "clocks/c15/clk_counter_20" BEL
+        "clocks/c15/clk_counter_21" BEL "clocks/c15/clk_counter_22" BEL
+        "clocks/c15/clk_counter_23" BEL "clocks/c15/clk_counter_24" BEL
+        "clocks/c2/clk_counter_0" BEL "clocks/c2/clk_counter_1" BEL
+        "clocks/c2/clk_counter_2" BEL "clocks/c2/clk_counter_3" BEL
+        "clocks/c2/clk_counter_4" BEL "clocks/c2/clk_counter_5" BEL
+        "clocks/c2/clk_counter_6" BEL "clocks/c2/clk_counter_7" BEL
+        "clocks/c2/clk_counter_8" BEL "clocks/c2/clk_counter_9" BEL
+        "clocks/c2/clk_counter_10" BEL "clocks/c2/clk_counter_11" BEL
+        "clocks/c2/clk_counter_12" BEL "clocks/c2/clk_counter_13" BEL
+        "clocks/c2/clk_counter_14" BEL "clocks/c2/clk_counter_15" BEL
+        "clocks/c2/clk_counter_16" BEL "clocks/c2/clk_counter_17" BEL
+        "clocks/c2/clk_counter_18" BEL "clocks/c2/clk_counter_19" BEL
+        "clocks/c2/clk_counter_20" BEL "clocks/c2/clk_counter_21" BEL
+        "clocks/c2/clk_counter_22" BEL "clocks/c2/clk_counter_23" BEL
+        "clocks/c2/clk_counter_24" BEL "clocks/c666/clk_counter_0" BEL
+        "clocks/c666/clk_counter_1" BEL "clocks/c666/clk_counter_2" BEL
+        "clocks/c666/clk_counter_3" BEL "clocks/c666/clk_counter_4" BEL
+        "clocks/c666/clk_counter_5" BEL "clocks/c666/clk_counter_6" BEL
+        "clocks/c666/clk_counter_7" BEL "clocks/c666/clk_counter_8" BEL
+        "clocks/c666/clk_counter_9" BEL "clocks/c666/clk_counter_10" BEL
+        "clocks/c666/clk_counter_11" BEL "clocks/c666/clk_counter_12" BEL
+        "clocks/c666/clk_counter_13" BEL "clocks/c666/clk_counter_14" BEL
+        "clocks/c666/clk_counter_15" BEL "clocks/c666/clk_counter_16" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

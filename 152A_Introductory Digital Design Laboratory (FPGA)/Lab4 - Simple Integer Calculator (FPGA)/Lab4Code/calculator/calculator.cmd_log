@@ -1,0 +1,185 @@
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 
+xst -intstyle ise -ifn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.xst" -ofn "E:/CS_152A/Lab4/Lab4Code/calculator/calculator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CS_152A/Lab4/Lab4Code/calculator.ucf -p xc6slx16-csg324-3 calculator.ngc calculator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calculator_map.ncd calculator.ngd calculator.pcf 
+par -w -intstyle ise -ol high -mt off calculator_map.ncd calculator.ncd calculator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calculator.twx calculator.ncd -o calculator.twr calculator.pcf 
+bitgen -intstyle ise -f calculator.ut calculator.ncd 

@@ -1,0 +1,69 @@
+//! **************************************************************************
+// Written by: Map P.68d on Wed Jun 03 15:46:36 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sw" LOCATE = SITE "T10" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnD" LOCATE = SITE "C9" LEVEL 1;
+COMP "btnL" LOCATE = SITE "C4" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "btnU" LOCATE = SITE "A8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "LEFT_DB" BEL "DOWN_DB" BEL "UP_DB" BEL "RIGHT_DB"
+        BEL "SELECT_DB" BEL "make_clocks_/c15/clk_blink_TEMP" BEL
+        "make_clocks_/c666/clk_666_TEMP" BEL "make_clocks_/c666/clk_counter_0"
+        BEL "make_clocks_/c666/clk_counter_1" BEL
+        "make_clocks_/c666/clk_counter_2" BEL
+        "make_clocks_/c666/clk_counter_3" BEL
+        "make_clocks_/c666/clk_counter_4" BEL
+        "make_clocks_/c666/clk_counter_5" BEL
+        "make_clocks_/c666/clk_counter_6" BEL
+        "make_clocks_/c666/clk_counter_7" BEL
+        "make_clocks_/c666/clk_counter_8" BEL
+        "make_clocks_/c666/clk_counter_9" BEL
+        "make_clocks_/c666/clk_counter_10" BEL
+        "make_clocks_/c666/clk_counter_11" BEL
+        "make_clocks_/c666/clk_counter_12" BEL
+        "make_clocks_/c666/clk_counter_13" BEL
+        "make_clocks_/c666/clk_counter_14" BEL
+        "make_clocks_/c666/clk_counter_15" BEL
+        "make_clocks_/c666/clk_counter_16" BEL
+        "make_clocks_/c15/clk_counter_0" BEL "make_clocks_/c15/clk_counter_1"
+        BEL "make_clocks_/c15/clk_counter_2" BEL
+        "make_clocks_/c15/clk_counter_3" BEL "make_clocks_/c15/clk_counter_4"
+        BEL "make_clocks_/c15/clk_counter_5" BEL
+        "make_clocks_/c15/clk_counter_6" BEL "make_clocks_/c15/clk_counter_7"
+        BEL "make_clocks_/c15/clk_counter_8" BEL
+        "make_clocks_/c15/clk_counter_9" BEL "make_clocks_/c15/clk_counter_10"
+        BEL "make_clocks_/c15/clk_counter_11" BEL
+        "make_clocks_/c15/clk_counter_12" BEL
+        "make_clocks_/c15/clk_counter_13" BEL
+        "make_clocks_/c15/clk_counter_14" BEL
+        "make_clocks_/c15/clk_counter_15" BEL
+        "make_clocks_/c15/clk_counter_16" BEL
+        "make_clocks_/c15/clk_counter_17" BEL
+        "make_clocks_/c15/clk_counter_18" BEL
+        "make_clocks_/c15/clk_counter_19" BEL
+        "make_clocks_/c15/clk_counter_20" BEL
+        "make_clocks_/c15/clk_counter_21" BEL
+        "make_clocks_/c15/clk_counter_22" BEL
+        "make_clocks_/c15/clk_counter_23" BEL
+        "make_clocks_/c15/clk_counter_24" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

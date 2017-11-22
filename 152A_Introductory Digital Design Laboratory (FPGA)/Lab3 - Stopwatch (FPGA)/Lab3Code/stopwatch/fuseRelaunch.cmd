@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/alvin/Dropbox/Spring 2015/CS 152A/Lab3/Lab3Code/stopwatch/tb_isim_beh.exe" -prj "/home/alvin/Dropbox/Spring 2015/CS 152A/Lab3/Lab3Code/stopwatch/tb_beh.prj" "work.tb" "work.glbl" 

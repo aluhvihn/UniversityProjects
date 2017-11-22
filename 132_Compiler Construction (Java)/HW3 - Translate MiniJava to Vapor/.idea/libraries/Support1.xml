@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Support1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hw3tester/hw3-tester/Support/._vapor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/hw3tester/hw3-tester/Support/minijava-parser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/hw3tester/hw3-tester/Support/vapor-parser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/hw3tester/hw3-tester/Support/vapor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/hw3tester/hw3-tester/Support/._minijava-parser.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

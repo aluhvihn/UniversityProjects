@@ -1,0 +1,6 @@
+verilog work "Rounder.v"
+verilog work "Inverter.v"
+verilog work "Converter.v"
+verilog work "fpcvt.v"
+verilog work "testbench.v"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"
