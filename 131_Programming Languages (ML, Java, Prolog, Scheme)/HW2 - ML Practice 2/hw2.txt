@@ -1,0 +1,61 @@
+Warm Up:
+
+At first, I didn't realize that one could return a curried function, 
+and I also misunderstood the homework 2 grammar as well. As a 
+result, my original 'convert_grammar' function returned a list of 
+rules, where each rule was of the form (nonterminal, [
+list_of_rules]), rather than pattern matching nonterminal -> [
+list_of_rules]. In office hours, however, I realized that I had to 
+return a function instead, and later learned that I could create a 
+function based off my previous format by making it a 'fun' that 
+executed an action of another helper function, which would parse the 
+grammar from homework 1 into the needed format. The fun takes in a 
+parameter, a nonterminal symbol, and matches all the tuples from the 
+homework 1 grammar that have the matching nonterminal symbol in the 
+left hand side and create a list with the rules from the 
+corresponding right hand sides.
+
+#####################################################################
+
+Assignment:
+At first, I was confused again about how to use all the curried 
+functions in this part of the assignment. A lot of the discussion 
+section helped me understand how to approach this problem, 
+especially in breaking up the matcher into two parts, 'and_matcher' 
+and 'or_matcher'. I also didn't realize that I needed to create a 
+'new_accept' to handle rules in the subsequent levels of the 
+matcher, but the discussion section helped me tackle that issue as 
+well too, by creating a curried function involving 'and_matcher' for 
+each level of 'new_accept'.
+
+'parse_prefix' passes in the start symbol as well as the grammar 
+function, the two parts of the homework 2 style grammar, into 
+'or_matcher'. It also passes in an 'accept' function, a frag and an 
+empty list, which will be filled with the path of rules followed to 
+derive the frag. The start symbol serves as the root of the parse 
+tree, which will be from top-down.
+
+'or_matcher' goes through the different rules for the corresponding 
+symbol (left to right), and tries to match each one to the fragment. 
+It does this by calling the 'and_matcher'. If 'and_matcher' returns 
+a complete match for the fragment, 'or_matcher' will return this. If 
+not, 'or_matcher' will use 'and_matcher' to try to find a match with 
+the next rule on the list for the symbol, until the list is 
+exhausted (in which case, return None).
+
+'and_matcher' tries to match a rule with the fragment. If it 
+matches, it has to use the curried 'accept' function to see if the 
+path (derivation) used for the fragment is allowed. When the 
+beginning of the matched rule is a terminal symbol, 'and_matcher' 
+recursively calls itself to find a match on the remainder of the 
+rules. If the rule doesn't match, but the beginning of the 
+nonterminal symbol, 'and_matcher' starts a recursive call of 
+'or_matcher' on the new nonterminal symbol as the start symbol to 
+split up the nonterminal symbol into the next level in the parse 
+tree. This stops when the initial rule has been expanded into all 
+terminal symbols and is a match with the fragment. 'and_matcher' 
+essentially implements a DFS on the rule/fragment.
+
+Weaknesses:
+'parse_prefix' expects left-associative grammar, so if given one 
+otherwise, it may become stuck in a loop.

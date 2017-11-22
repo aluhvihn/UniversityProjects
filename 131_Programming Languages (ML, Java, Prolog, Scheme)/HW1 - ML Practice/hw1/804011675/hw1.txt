@@ -1,0 +1,39 @@
+Warmup:
+
+subset - I made subset a recursive function which checked the head of 'list a' 
+against 'list b'. When a match is found, I move onto the next item in 'list 
+a', until the whole list is exhausted (true). If any item in 'list a' does not 
+find a match in 'list b', then return false.
+
+equal_sets - I just made this check that both 'list a' is a subset of 'list b' 
+and that 'list b' is a subset of 'list a'. If both lists (sets) are subsets of 
+one another, they are equal.
+
+set_union - For this function, I just used the @ operator, which concatenates 
+two lists together.
+
+set_intersection - I made this a recursive function that checks each item in 
+'list a' to see if it exists in 'list b' using the 'subset' function. If it 
+is, I return a list with that item appended with the result of the recursive 
+result of set_intersection on the rest of 'list a' and 'list b'; otherwise, I 
+return a list with the recursive result of set_intersection on the rest of 
+'list a' and 'list b' (without that item that isn't a subset of b).
+
+set_diff - Similar to the set_intersection function, except the opposite; when 
+an item in 'list a' is NOT a subset of 'list b', that's when I appended the 
+item to the result.
+
+computed_fixed_point - I made this a recursive function that repeatedly 
+applied the function 'f' to 'x', then checked to see if 'eq' held true. If so, 
+I returned that result (it's at a fixed point), otherwise, I applied another 
+level of function 'f'.
+
+computed_periodic_point - Similar to computed_fixed_point, except I repeatedly 
+applied the function 'p' times before checking if 'eq' held true.
+
+###############################################################################
+
+filter_blind_alleys - I used computed_fixed_point and equal_sets to check 
+whether each rule is a blind alley or not. Each recursive pass goes to 
+identifying more symbols until no more symbols are generated, so those would 
+not be blind alleys.

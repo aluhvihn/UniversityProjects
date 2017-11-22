@@ -1,0 +1,86 @@
+Statistics for kenken test on 6x6 example:
+
+      Times              since start      since last
+
+         user   time       0.018 sec       0.003 sec
+         system time       0.006 sec       0.000 sec
+         cpu    time       0.024 sec       0.003 sec
+         real   time      48.408 sec       4.682 sec
+
+---------------------------------------------------------
+
+Statistics for kenken test on 4x4 example:
+
+      Times              since start      since last
+
+         user   time       0.023 sec       0.001 sec
+         system time       0.008 sec       0.000 sec
+         cpu    time       0.031 sec       0.001 sec
+         real   time     282.899 sec       0.001 sec
+
+---------------------------------------------------------
+
+Statistics for plain_kenken test on 4x4 example:
+
+      Times              since start      since last
+
+         user   time     200.617 sec       0.595 sec
+         system time       0.013 sec       0.000 sec
+         cpu    time     200.630 sec       0.595 sec
+         real   time     662.908 sec       0.594 sec
+
+---------------------------------------------------------
+
+plain_kenken would take way too long on a 6x6 example.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+No-op KenKen API design
+ 
+%% noop_kenken/4
+%%  N     nonnegative integer, # of cells per side
+%%  C     list of constraints without operations
+%%        ie. [(11, [1-1, 2-1]), (2, 1-2, 1-3)]
+%%  T     the solved matrix
+%%  O     list of operators to be applied to constraint list C
+%%        ie. [+, /]
+
+  noop_kenken(N, C, T, O)
+
+%% Essentially, operators enumeration should be represented
+%% in the meet_constraints predicate.
+
+%% Example call:
+
+  noop_kenken(
+    6,
+    [
+     (11, [1-1, 2-1]),
+     (2, 1-2, 1-3),
+     (20, [1-4, 2-4]),
+     (6, [1-5, 1-6, 2-6, 3-6]),
+     (3, 2-2, 2-3),
+     (3, 2-5, 3-5),
+     (240, [3-1, 3-2, 4-1, 4-2]),
+     (6, [3-3, 3-4]),
+     (6, [4-3, 5-3]),
+     (7, [4-4, 5-4, 5-5]),
+     (30, [4-5, 4-6]),
+     (6, [5-1, 5-2]),
+     (9, [5-6, 6-6]),
+     (8, [6-1, 6-2, 6-3]),
+     (2, 6-4, 6-5)
+    ],
+    T,
+    O
+  ).
+
+%% Output:
+  T = [[5,6,3,4,1,2],
+       [6,1,4,5,2,3],
+       [4,5,2,3,6,1],
+       [3,4,1,2,5,6],
+       [2,3,6,1,4,5],
+       [1,2,5,6,3,4]]
+  O = [+, /, *, *, -, /, *, *, *, +, *, *, +, +, /]
+
+  no
