@@ -1,0 +1,24 @@
+Alvin Lim       804 011 675
+
+###############################################################################
+
+GRAPH 1, 3 COLORS:
+		Unsatisfiable
+
+GRAPH 1, 4 COLORS:
+		Satisfiable
+
+This shows that we need a MINIMUM OF 4 COLORS to solve the graph coloring
+problem for graph 1.
+
+Solution: 
+		((1) (6) (12) (13) (19) (22) (27))
+
+	Node | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+	----------------------------------
+	Color| 1 | 2 | 4 | 1 | 3 | 2 | 3 |
+
+###############################################################################
+
+GRAPH 2:
+		You need a MINIMUM OF 8 COLORS to properly color graph 2.

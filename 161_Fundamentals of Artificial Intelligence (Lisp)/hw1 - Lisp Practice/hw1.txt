@@ -1,0 +1,138 @@
+Alvin Lim       804 011 675
+
+###############################################################################
+Answers to Questions:
+###############################################################################
+
+1. For larger values, PAD starts to require much more time to complete. This
+is because for every (PAD X), the program has to recursively calculate
+(PAD X-2) to (PAD 0), since these Padovan numbers are all needed to calculate
+(PAD X). As we increase X, the amount of cumulative calculations increases
+greatly because of this recursive behavior.
+
+2. The values returned by SUMS are each 1 less than their respective PAD return
+values. This is because for 0, 1, and 2, the Padovan numbers are 1, whereas the 
+number of additions needed to compute each of them are 0. Since the Padovan
+numbers uses these base case results to calculate the new values, we start by
+adding 1 and 1 for (PAD 3) for a result of 2. For SUMS, on the otherhand, we
+are also always adding the X-2 and X-3 numbers, but since these correspond to
+the number of additions used rather than Padovan numbers, its result is less
+than the respective Padovan number by 2, and then considering the extra
+addition of the X-2 and X-3 numbers, its result is always less than the 
+respective Padovan number by 1.
+
+###############################################################################
+Test Case Outputs:
+###############################################################################
+
+* (load "hw1.lsp")
+
+T
+* (PAD 0)
+
+1
+* (PAD 1)
+
+1
+* (PAD 2)
+
+1
+* (PAD 3)
+
+2
+* (PAD 4)
+
+2
+* (PAD 5)
+
+3
+* (PAD 6)
+
+4
+* (PAD 7)
+
+5
+* (PAD 8)
+
+7
+* (PAD 9)
+
+9
+* (PAD 10)
+
+12
+* (PAD 50)
+
+922111
+* (PAD 60)
+
+15346786
+* (PAD 70)
+
+255418101
+* (SUM 0)
+
+0
+* (SUM 1)
+
+0
+* (SUM 2)
+
+0
+* (SUM 3)
+
+1
+* (SUM 4)
+
+1
+* (SUM 5)
+
+2
+* (SUM 6)
+
+3
+* (SUM 7)
+
+4
+* (SUM 8)
+
+6
+* (SUM 9)
+
+8
+* (SUM 10)
+
+11
+* (SUM 50)
+
+92110
+* (SUM 60)
+
+15346785
+* (SUM 70)
+
+255418100
+* (ANON '(FOO 5))
+
+(? ?)
+* (ANON '42)
+
+?
+* (ANON 'FOO)
+
+?
+* (ANON '(((L E) F) T))
+
+(((? ?) ?) ?)
+* (ANON '(5 FOO 3.1 -0.2))
+
+(? ? ? ?)
+* (ANON '(1 (FOO 3.1) -0.2))
+
+(? (? ?) ?)
+* (ANON '(((1 2) (FOO 3.1)) (BAR -0.2)))
+
+(((? ?) (? ?)) (? ?))
+* (ANON '(R (I (G (H T)))))
+
+(? (? (? (? ?))))
